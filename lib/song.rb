@@ -28,11 +28,11 @@ class Song
   end
 
   def self.genre_count
-    genre_hist = {}
+    genre_histogram = {}
     @@genres.uniq.each do |genre|
-      genre_hist[genre] = @@genres.count(genre)
+      genre_histogram[genre] = @@genres.count(genre)
     end
-    genre_hist
+    genre_histogram
   end
 
   def self.artist_count
@@ -42,5 +42,5 @@ class Song
     end
     artist_hist
   end
-  
+
 end
